@@ -1,0 +1,51 @@
+@import "../../styles/variables";
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: $secondary-color 2px solid;
+  padding: 1rem;
+  width: 4.063rem;
+  gap: 2.813rem;
+
+  .logo {
+    cursor: pointer;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 1.5rem;
+
+    li {
+      height: 3.125rem;
+      width: 3.125rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+
+      &:hover {
+        background-color: $active-color;
+      }
+    }
+
+    .active {
+      background-color: $active-color;
+    }
+  }
+
+  .trash {
+    cursor: pointer;
+
+    &:hover {
+      background-color: $active-color;
+    }
+  }
+}
