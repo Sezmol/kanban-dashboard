@@ -1,3 +1,50 @@
+@import "../../styles/variables";
+
 .main-header {
-  grid-area: "main-header";
+  padding: 1.375rem 2.75rem 0 1.75rem;
+  border-left: 2px solid $secondary-color;
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    span {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+  }
+
+  .add-button {
+    background-color: $primary-color;
+
+    &:hover {
+      background-color: $secondary-main-color !important;
+    }
+  }
+
+  .progress {
+    .ant-progress-inner {
+      background-color: $primary-color;
+    }
+  }
+
+  .tabs {
+    display: flex;
+    gap: 2.375rem;
+
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+
+    span {
+      cursor: pointer;
+      padding: 0.5rem 0;
+    }
+
+    .acitve {
+      border-bottom: 2px solid $primary-color;
+    }
+  }
 }

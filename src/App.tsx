@@ -1,4 +1,4 @@
-import { Col, Row } from "antd";
+import { Col, Flex, Row } from "antd";
 
 import Header from "./components/Header/Header";
 import NavBar from "./components/NavBar/NavBar";
@@ -19,8 +19,10 @@ function App() {
       </Col>
       <Col span={20}>
         <Header />
-        <MainHeader />
-        <MainContent />
+        <Flex vertical>
+          <MainHeader />
+          <MainContent />
+        </Flex>
       </Col>
     </Row>
   );
